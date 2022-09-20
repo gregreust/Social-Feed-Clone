@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Post from './Post';
 
 const  WritePost = () => {
 
@@ -10,8 +9,10 @@ const  WritePost = () => {
         // prevents page from refresh
         event.preventDefault(); 
         
-        newPost = Post({name, body});    //create new post object with date and time 
-        props.addNewPost(newPost);         //sends new post object to PostFeed
+        //NEED TO LOG DATE AND TIME HERE
+
+        newPost = {name, body};          //send info to post list 
+        props.addNewPostInfo(newPost);         //sends new post object to PostFeed
     }
 
     return (  
