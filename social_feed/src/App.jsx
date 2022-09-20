@@ -9,7 +9,6 @@ function App() {
         <h2>Social Feed</h2>
       </nav>
       <WritePost/>
-      <PostFeed/>
     </div>
   );
 }
