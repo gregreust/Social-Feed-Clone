@@ -9,11 +9,9 @@ const  WritePost = () => {
     const handleSubmit = (event) => {
         // prevents page from refresh
         event.preventDefault(); 
-        //logs date of post
-        let newDate = moment(Date.now()).format(format1);
-        setDate(newDate);   
-        let newPost = {name, body, newDate};    //TO-DO: make post object with like and dislike buttons, add many post objects to postfeed
-        props.addNewPost(newPost);         //sends new post to PostFeed
+        
+        newPost = Post({name, body});    //create new post object with date and time 
+        props.addNewPost(newPost);         //sends new post object to PostFeed
     }
 
     return (  
