@@ -2,14 +2,17 @@ import React from 'react';
 
 
 
-const  WritePost = (props) => {
+const  WritePost = () => {
     return (  
-        <form>
+        <div class="container">
+            <form>
             <label>Name</label>
-            <input/>
-            <label>Write post</label>
-            <input/>
+            <input type="text" required/>
+            <label>Post</label>
+            <textarea required/>
+            <button>Create</button>
         </form>
+        </div>
     );
 }
  
