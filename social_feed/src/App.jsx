@@ -7,10 +7,11 @@ function App() {
 
   const [posts, setPosts] = useState([{name:"Greg Reust", body:"Hello hows it going?"}]);
 
-    function addNewPost(post){ //recieves post from WritePost
-        let tempPostFeed = [post, ...posts]; //puts new post in fromt of all original posts
-        setPosts(tempPostFeed);
-    }
+  
+  function addNewPost(post){ //recieves post from WritePost
+    let tempPostFeed = [post, ...posts]; //puts new post in fromt of all original posts
+    setPosts(tempPostFeed);
+  }
 
   return (
     <div id='root'>

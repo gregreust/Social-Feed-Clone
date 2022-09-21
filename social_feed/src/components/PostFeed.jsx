@@ -3,18 +3,19 @@ import WritePost from './WritePost';
 import App from '../App';
 
 
-const PostFeed = () => {
-    
+const PostFeed = (props) => {
     
 
-    function displayPosts(postsArray){
-        for(let i=0; i<posts.length; i++){
-            <div class="name">posts[i]</div>
+    function displayPosts(props){
+        for(let i=0; i<props.postsArray.length; i++){             //postsArray recieved from App
+            <div class="name">{props.postsArray[i]}</div>
+            
         }
     }
         
     return (
         <div class="post-feed-container"> 
+            <displayPosts/>
         </div>
      );
 }

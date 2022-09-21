@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const  WritePost = () => {
+const  WritePost = (props) => {
 
     const [name, setName] = useState('');
     const [body, setBody] = useState('');
