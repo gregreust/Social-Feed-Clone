@@ -1,22 +1,15 @@
 import React from 'react';
-import WritePost from './WritePost';
-import App from '../App';
+import Post from './Post';
 
 
-const PostFeed = (props) => {
+const PostFeed = ({postsArray}) => {
     
 
-    function displayPosts(props){
-        for(let i=0; i<props.postsArray.length; i++){             //postsArray recieved from App
-            <div class="name">{props.postsArray[i]}</div>
-            
-        }
-    }
-        
+
     return (
-        <div class="post-feed-container"> 
-            <displayPosts/>
-        </div>
+        <ul> 
+            {postsArray.map(post => <li><Post postObject={post}/></li>)}
+        </ul>
      );
 }
  
