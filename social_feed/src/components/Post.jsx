@@ -5,8 +5,8 @@ const Post = ({postObject}) => {
         <div class="post">
             <div class="name">{postObject.name}</div>
             <div class="body">{postObject.body}</div>
-            <div class="date-info">date</div>
-            <div class="time-info">time</div>
+            <div class="date">{postObject.date}</div>
+            <div class="time">{postObject.time}</div>
             <button class="reaction" id="like">Like</button>
             <button class="reaction" id="dislike">Dislike</button>
         </div>

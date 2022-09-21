@@ -10,10 +10,13 @@ const  WritePost = ({addNewPostInfo}) => {
         // prevents page from refresh
         event.preventDefault(); 
         
-        //NEED TO LOG DATE AND TIME HERE
+        //Logging date and time of submit event
+        const current = new Date();
+        const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
+        const time = `${current.getHours()}:${current.getMinutes()+1}`;
 
-        let newPost = {name, body};          //send info to post list 
-        addNewPostInfo(newPost);         //sends post name and body to App
+        let newPost = {name, body, date, time};          //collect info in object variable 
+        addNewPostInfo(newPost);                         //sends post object to App
     }
 
     return (  

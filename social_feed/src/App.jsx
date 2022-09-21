@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
 
   const [posts, setPosts] = useState([
-    { name: "Greg Reust", body: "Hello how's it going?" },
+    { name: "Greg Reust", body: "Hello how's it going?", date: "9/21/2022", time: "10:00"},
   ]);
 
   function addNewPost(post) {
