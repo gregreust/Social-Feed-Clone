@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-// import  WritePost from './components/WritePost';
+import  WritePost from './components/WritePost';
 import PostFeed from "./components/PostFeed";
 import "./App.css";
 
 function App() {
+
   const [posts, setPosts] = useState([
-    { name: "Greg Reust", body: "Hello hows it going?" },
-    { name: "P Reust", body: "Hello hows it going?" },
-    { name: "T Reust", body: "Hello hows it going?" },
-    { name: "A Reust", body: "Hello hows it going?" },
+    { name: "Greg Reust", body: "Hello how's it going?" },
   ]);
 
   function addNewPost(post) {
@@ -24,7 +22,7 @@ function App() {
       </nav>
 
       {/* receives new post to add to posts */}
-      {/* <WritePost addNewPostInfo={addNewPost}/>   */}
+      <WritePost addNewPostInfo={addNewPost}/>   
 
       {/* sends posts to be displayed */}
       <PostFeed postsArray={posts} />
