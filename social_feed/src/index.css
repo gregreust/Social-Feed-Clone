@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    /* background:lightblue; */
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 60px 50px 60px 50px;
+    border-style: hidden;
+
+}
+
+.container{
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-style:ridge;
+    border-width: 1px;
+    border-color: rgb(54, 63, 63);
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    padding: 5px;
+    font-weight: 500;
+    font-size: larger;
+    color:darkgray;
+}
+
+.form-top{
+    padding-bottom: 1rem;
+}
+
+.form-bottom{
+    text-align: start;
+}
+
+input {
+    width: 70%;
+}
+
+textarea{
+    width: 70%;
+}
+
+button {
+    padding: 1rem;
+    background-color: royalblue;
+}

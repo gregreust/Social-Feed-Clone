@@ -20,14 +20,20 @@ const  WritePost = ({addNewPostInfo}) => {
     }
 
     return (  
-        <div class="container">
+        <div class="form-container">
             <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type="text" required value={name} onChange={(event) => setName(event.target.value)}/>   
-            {/*value links to useState above, onChange enables a new value to be set*/}
-            <label>Post</label>
-            <textarea required value={body} onChange={(event) => setBody(event.target.value)}/>
-            <button>Create</button>
+            <div class="form-top">
+                <label>Name</label>
+                {/*value links to useState above, onChange enables a new value to be set*/}
+                <input type="text" required value={name} onChange={(event) => setName(event.target.value)}/>   
+            </div>
+            
+            <div class="form-bottom">
+                <label>Post</label>
+                <textarea required value={body} onChange={(event) => setBody(event.target.value)}/>
+                <button>Create</button>
+            </div>
+            
         </form>
         </div>
     );

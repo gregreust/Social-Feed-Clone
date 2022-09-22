@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import  WritePost from './components/WritePost';
 import PostFeed from "./components/PostFeed";
-import "./App.css";
 
 function App() {
 
@@ -17,15 +16,21 @@ function App() {
 
   return (
     <div id="root">
-      <nav>
-        <h2>Social Feed</h2>
-      </nav>
-
-      {/* receives new post to add to posts */}
-      <WritePost addNewPostInfo={addNewPost}/>   
-
-      {/* sends posts to be displayed */}
-      <PostFeed postsArray={posts} />
+      <header>
+        <nav>
+          <h1>Social Feed</h1>
+        </nav>
+      </header>
+      <div class="container">
+        {/* receives new post to add to posts */}
+        <WritePost addNewPostInfo={addNewPost}/>   
+      </div>
+      <div class="container">
+        <div class="posts-container"> 
+          {/* sends posts to be displayed */}
+          <PostFeed postsArray={posts} />
+        </div>
+      </div>
     </div>
   );
 }
