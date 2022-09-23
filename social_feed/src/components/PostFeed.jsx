@@ -7,7 +7,7 @@ const PostFeed = ({postsArray}) => {
 
 
     return (
-        <ul> 
+        <ul class="feed-list"> 
             {postsArray.map(post => <li><Post postObject={post}/></li>)}
         </ul>
      );

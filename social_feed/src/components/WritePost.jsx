@@ -31,7 +31,7 @@ const  WritePost = ({addNewPostInfo}) => {
             <div class="form-bottom">
                 <label>Post</label>
                 <textarea required value={body} onChange={(event) => setBody(event.target.value)}/>
-                <button>Create</button>
+                <button class="create">Create</button>
             </div>
             
         </form>
