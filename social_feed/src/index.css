@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* background:lightblue; */
+    background:rgba(152, 245, 255, 0.757);
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -26,6 +26,7 @@
 .formcontainer {
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 label{
@@ -33,11 +34,14 @@ label{
     font-weight: 500;
     font-size: larger;
     color:darkgray;
+    background-color: white;
     
 }
 
 .form-top{
     padding-bottom: 1rem;
+    background-color: white;
+
 }
 
 .form-top input {
@@ -46,12 +50,13 @@ label{
     border-style: solid;
     border-width: 1px;
     border-radius: 6px;
+    background-color: white;
 }
 
 .form-bottom{
    display: flex;
    text-align: left;
-    
+   background-color: white;
 }
 
 .form-bottom textarea {
@@ -62,6 +67,7 @@ label{
     border-style: solid;
     border-width: 1px;
     border-radius: 6px;
+    background-color: white;
 }
 
 
@@ -79,10 +85,49 @@ label{
     align-self: flex-end;
 }
 
-.reaction {
-
+.post {
+    background-color: white;
+    margin-top: 1rem;
 }
 
+.post .name{
+    background-color: white;
+}
+
+.post .body {
+    background-color: white;
+}
+
+.post .time{
+    background-color: white;
+}
+
+.post .date{
+    background-color: white;
+}
 .feed-list {
     list-style: none;
+    background-color: white;
+}
+
+.feed-list li {
+    border-bottom: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: white;
+}
+
+.inactive {
+    background-color: rgb(145, 145, 145);
+    margin:1rem;
+}
+
+.liked {
+    background-color: rgba(61, 249, 79, 0.872);
+    margin: 1rem;
+}
+
+.disliked {
+    background-color: rgba(253, 71, 71, 0.867);
+    margin: 1rem;
 }
