@@ -28,13 +28,29 @@ const Post = ({postObject}) => {
     }
 
      return (
-        <div class="post">
+        // post contains a grid with 2 columns and three rows
+        <div class="post">   
+
+          
             <div class="name">{postObject.name}</div>
+             
+            
+            <div class="timestamp">
+                <div class="time">{postObject.time}</div>
+                <div class="date">{postObject.date}</div>
+            </div>
+
+      
             <div class="body">{postObject.body}</div>
-            <div class="date">{postObject.date}</div>
-            <div class="time">{postObject.time}</div>
-            <button class={likeButtonClass} onClick={handleLikeClick}>Like</button>
-            <button class={dislikeButtonClass} onClick={handleDislikeClick}>Dislike</button>
+    
+
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            
+            <div class="buttonholder">
+                <button class={likeButtonClass} onClick={handleLikeClick}>Like</button>
+                <button class={dislikeButtonClass} onClick={handleDislikeClick}>Dislike</button>
+            </div>
         </div>
     );
 }
